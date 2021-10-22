@@ -1,5 +1,4 @@
 import { Collection } from "./types/collection";
-import collection from "./collections.json";
 
 // transform the collection object to conform to the following type:
 
@@ -10,10 +9,11 @@ interface Data {
 }
 
 type Fields = {
-  technicalTitle: string; // value of fields.technical_title.options.placeholder
-  status: string; // status.default_value
+  technicalTitle: string | null; // value of fields.technical_title.options.placeholder
+  status: string; // fields.status.default_value
   heroVideo: string | null; // fields.hero_video.default_value
 };
+
 
 // if there are less than 10 elements
 // and/or
