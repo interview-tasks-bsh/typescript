@@ -1,4 +1,6 @@
-// transform the collection object to conform to the following type:
+// - start the json-server
+// - make a get request on http://localhost:3000
+// - transform the collection object to conform to the type Payload  (see below)
 
 type Payload = {
   data: Data[];
@@ -21,7 +23,12 @@ type Errors = {
 };
 
 // it gets the data from the api and transforms it to the following type: Payload
-const collectionTransformer = () => {};
+const collectionTransformer = () => {
+
+};
+
+
+export { collectionTransformer, Payload };
 
 // if there are less than 10 elements
 // and/or
@@ -32,5 +39,3 @@ const collectionTransformer = () => {};
 // create your payload/answer type
 
 // if there are any errors, console.log all of them
-
-export { collectionTransformer, Payload };
